@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>रक्तDaan</title>
+</head>
+<body>
+    <nav class="navbar background h-nav"><div class="list"></div>
+        <ul class="nav-bar v-class">
+            
+            <li><div class="logo"><img src="images/logo.jpg" alt="logo"></div></li>
+            <li><a href="home">Home</a></li>
+            <li><a href="about">About Us</a></li>
+            <li><a href="contact">Contact Us</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line"></div> 
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+    <section class="contact">
+        <h1 class="text-center">Donor's Registeration Form</h1>
+        <div class="form"><form action="/Signupd" method="POST">
+            <input class="form-input" type="text" name="dname" id="name" placeholder="Enter your name">
+            <input class="form-input" type="email" name="demail" id="email" placeholder="Enter your E-mail">
+            <input class="form-input" type="phone" name="dphone" id="phone" placeholder="Enter your Phone Number">
+            
+            <label for="bloodgroup">Choose your Blood Group:</label>
+            <select name="bloodgroup" id="bloodgroup">
+                <option value="Ap">A+</option>
+                <option value="An">A-</option>
+                <option value="Bp">B+</option>
+                <option value="Bn">B-</option>
+                <option value="Op">O+</option>
+                <option value="On">O-</option>
+                <option value="ABp">AB+</option>
+                <option value="ABn">AB-</option>
+            </select>
+            
+            <input type="date" class="form-input" name="DOB" id="dob" placeholder="Enter your Date of Birth">
+            <textarea class="form-input" name="address" id="address" cols="59" class="form-input" rows="10" placeholder="Enter you Proper Address"></textarea>
+            
+            <label for="state">Choose your State:</label>
+            <select name="state" id="state">
+                <option value="AN">Andaman and Nicobar Islands</option>
+                <option value="AP">Andhra Pradesh</option>
+                <option value="AR">Arunachal Pradesh</option>
+                <option value="AS">Assam</option>
+                <option value="BR">Bihar</option>
+                <option value="CH">Chandigarh</option>
+                <option value="CT">Chhattisgarh</option>
+                <option value="DN">Dadra and Nagar Haveli</option>
+                <option value="DD">Daman and Diu</option>
+                <option value="DL">Delhi</option>
+                <option value="GA">Goa</option>
+                <option value="GJ">Gujarat</option>
+                <option value="HR">Haryana</option>
+                <option value="HP">Himachal Pradesh</option>
+                <option value="JK">Jammu and Kashmir</option>
+                <option value="JH">Jharkhand</option>
+                <option value="KA">Karnataka</option>
+                <option value="KL">Kerala</option>
+                <option value="LA">Ladakh</option>
+                <option value="LD">Lakshadweep</option>
+                <option value="MP">Madhya Pradesh</option>
+                <option value="MH">Maharashtra</option>
+                <option value="MN">Manipur</option>
+                <option value="ML">Meghalaya</option>
+                <option value="MZ">Mizoram</option>
+                <option value="NL">Nagaland</option>
+                <option value="OR">Odisha</option>
+                <option value="PY">Puducherry</option>
+                <option value="PB">Punjab</option>
+                <option value="RJ">Rajasthan</option>
+                <option value="SK">Sikkim</option>
+                <option value="TN">Tamil Nadu</option>
+                <option value="TG">Telangana</option>
+                <option value="TR">Tripura</option>
+                <option value="UP">Uttar Pradesh</option>
+                <option value="UT">Uttarakhand</option>
+                <option value="WB">West Bengal</option>
+                </select>
+            
+            <input type="text" name="pincode" id="pincode" placeholder="Enter your Pincode" class="form-input">
+            <input type="text" name="allergy" id="allergy" placeholder="Enter Allergy (if any)" class="form-input">
+            <input type="password" name="password" id="password" placeholder="Enter your Passoword" class="form-input">
+            <input type="password" name="confirm_password" id="password" placeholder="Confirm your Password" class="form-input">
+            </div>
+            <div class="form">
+                <br><br>
+            <button class="btn " inputmode="Submit" value="signupd">Submit</button>
+        </form> 
+            <br>
+            <br>
+            <br>
+            <br>
+            <br><br><br><br><br>
+            </div> 
+    </section>
+   
+    <footer class="background">
+        <p class="text-footer">
+        Copyright &copy; 207 - All Rights Reserved
+    </p>
+    </footer>
+    <script src="resp/resp.js"></script>
+</body>
+</html> 
