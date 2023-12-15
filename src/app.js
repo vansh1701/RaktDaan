@@ -428,7 +428,7 @@ const { request } = require('http');
 
 // // app.use(express.static(static_path));
 
-app.post("/Signupd", async(req,res) =>{
+app.post("/signupd", async(req,res) =>{
     try { 
         const password = req.body.password;
         const confirm_password = req.body.confirm_password;
@@ -461,7 +461,7 @@ app.post("/Signupd", async(req,res) =>{
     }
 })
 
-app.post("/Signuph" , async(req,res) =>{
+app.post("/signuph" , async(req,res) =>{
     try {
         const password = req.body.password;
         const confirm_password = req.body.confirm_password;
