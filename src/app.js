@@ -384,7 +384,7 @@ app.get("/requests", authh , async(req,res)=>{
 });
 app.get("/signup", (_,resp) =>{
     console.log("path hit");
-    resp.render("Signup");
+    resp.render("signup");
 });
 app.get("/loginh", (_,resp) =>{
     resp.render("loginh");
