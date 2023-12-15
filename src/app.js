@@ -100,7 +100,7 @@ app.post("/update",authh , async (req,res)=>{
     }
 });
 app.get("/recieve", (req,res)=>{
-    res.render("recieve");
+    res.render("signup");
 });
 app.get("/aftersign",(_,resp)=>{
     resp.render("aftersign")
@@ -148,7 +148,7 @@ app.get("/contact2", auth ,(req,res)=>{
 });
 
 app.get("/donate",(_,resp)=>{
-    resp.render("donate");
+    resp.render("signup");
 });
 app.get("/hospital_history" , authh, async (req,res)=>{
     try{
