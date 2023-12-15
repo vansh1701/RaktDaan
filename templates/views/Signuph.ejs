@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>रक्तDaan</title>
+</head>
+<body>
+    <nav class="navbar background h-nav"><div class="list"></div>
+        <ul class="nav-bar v-class">
+            
+            <li><div class="logo"><img src="/images/logo.jpg" alt="logo"></div></li>
+            <li><a href="home">Home</a></li>
+            <li><a href="about">About Us</a></li>
+            <li><a href="contact">Contact Us</a></li></div>
+        </ul>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+    <section class="contact">
+        <h1 class="text-center">Hospital's Registeration Form</h1>
+        <div class="form"><form action="/Signuph" method="POST">
+            
+            <input type="text" id="hname" name="hname" placeholder="Enter Hospital's Name" class="form-input">
+            <input type="text" id="aname" name="aname" placeholder="Enter Admin's Name" class="form-input">
+            <input type="email" id="hemail" name="hemail" placeholder="Enter Hospital's E-mail" class="form-input">
+            <input type="phone" id="hphone" name="hphone" placeholder="Enter Hospital's Phone Number" class="form-input">
+            <input type="phone" id="aphone" name="aphone" placeholder="Enter Admin's Phone Number" class="form-input">
+            <textarea class="form-input" name="haddress" id="address" cols="59" class="form-input" rows="10" placeholder="Enter you Proper Address"></textarea>
+            
+            <label for="state">Choose your State:</label>
+            <select name="state" id="state">
+                <option value="AN">Andaman and Nicobar Islands</option>
+                <option value="AP">Andhra Pradesh</option>
+                <option value="AR">Arunachal Pradesh</option>
+                <option value="AS">Assam</option>
+                <option value="BR">Bihar</option>
+                <option value="CH">Chandigarh</option>
+                <option value="CT">Chhattisgarh</option>
+                <option value="DN">Dadra and Nagar Haveli</option>
+                <option value="DD">Daman and Diu</option>
+                <option value="DL">Delhi</option>
+                <option value="GA">Goa</option>
+                <option value="GJ">Gujarat</option>
+                <option value="HR">Haryana</option>
+                <option value="HP">Himachal Pradesh</option>
+                <option value="JK">Jammu and Kashmir</option>
+                <option value="JH">Jharkhand</option>
+                <option value="KA">Karnataka</option>
+                <option value="KL">Kerala</option>
+                <option value="LA">Ladakh</option>
+                <option value="LD">Lakshadweep</option>
+                <option value="MP">Madhya Pradesh</option>
+                <option value="MH">Maharashtra</option>
+                <option value="MN">Manipur</option>
+                <option value="ML">Meghalaya</option>
+                <option value="MZ">Mizoram</option>
+                <option value="NL">Nagaland</option>
+                <option value="OR">Odisha</option>
+                <option value="PY">Puducherry</option>
+                <option value="PB">Punjab</option>
+                <option value="RJ">Rajasthan</option>
+                <option value="SK">Sikkim</option>
+                <option value="TN">Tamil Nadu</option>
+                <option value="TG">Telangana</option>
+                <option value="TR">Tripura</option>
+                <option value="UP">Uttar Pradesh</option>
+                <option value="UT">Uttarakhand</option>
+                <option value="WB">West Bengal</option>
+                </select><input class="form-input" type="text" name="Pincode" id="pincode" placeholder="Pincode">
+                
+            <input type="text" id="location" name="location" placeholder="Enter Hospital's Location from Google Maps" class="form-input">
+            <br><br><hr><p size="15px">Blood Records Availability </p>
+            <input type="number" name="Ap" id="Ap" placeholder="Enter Availability of A+" class="form-input">
+            <input type="number" name="An" id="An" placeholder="Enter Availability of A-" class="form-input">
+            <input type="number" name="Bp" id="Bp" placeholder="Enter Availability of B+" class="form-input">
+            <input type="number" name="Bn" id="Bn" placeholder="Enter Availability of B-" class="form-input">
+            <input type="number" name="Op" id="Op" placeholder="Enter Availability of O+" class="form-input">
+            <input type="number" name="On" id="On" placeholder="Enter Availability of O-" class="form-input">
+            <input type="number" name="ABp" id="ABp" placeholder="Enter Availability of AB+" class="form-input">
+            <br><br><hr>
+            <input type="password" name="password" id="password" placeholder="Enter your Password" class="form-input">
+            <input type="password" name="confirm_password" id="password" placeholder="Confirm your Password" class="form-input">
+                
+        </div>
+            <div class="form"><br><br>
+            <button class="btn " inputmode="Submit" value="Signuph">Submit</button></form>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br><br><br><br><br>
+            </div> 
+    </section>
+   
+    <footer class="background">
+        <p class="text-footer">
+        Copyright &copy; 207 - All Rights Reserved
+    </p>
+    </footer>
+    <script src="/resp.js"></script>
+</body>
+</html> 

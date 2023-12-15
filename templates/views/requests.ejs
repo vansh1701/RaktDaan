@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>रक्तDaan</title>
+</head>
+<body>
+    <nav class="navbar background h-nav"><div class="list"></div>
+        <ul class="nav-bar v-class">
+            
+            <li><div class="logo"><img src="images/logo.jpg" alt="logo"></div></li>
+            <li><a href="hospital_home">Home</a></li>
+            <li><a href="hospital_about">About Us</a></li>
+            <li><a href="hospital_contact">Contact Us</a></li>
+            <li><a href="record">Records</a></li>
+            <li><a href="requests">Requests</a></li>
+            <li><a href="logout">Logout</a></li>
+            <div class="profile"><li><a href="profileh"><%= userData.hname%></a></li></div>
+        </div>
+        </ul>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+    <section class="background firstsection">
+        <div class="box-main">
+            <div class="fhalf">
+                <p class="text-big">Blood Donation Requests:-</p>
+                <table>
+                    <tr>
+                      <th>Patient Name</th>
+                      <th>Contact No.</th>
+                      <th>Blood Group</th>
+                      <th>Action</th>
+                    </tr>
+                    <% check.forEach(function(element) { %>
+                        <tr style="text-align: center">
+                      <td> <%= element.name %></td>
+                      <td> <%= element.phone %></td>
+                      <td> <%= element.bg %></td>
+                      <td> 
+                        <form method="POST">
+                        <button class="btn">  <a href="<%= `/statuss?id=`+element._id %>">  DONATED</a></button>
+                    </form>
+                </td>
+                      <% }); %>
+                    
+                  </table>
+
+                  <p class="text-big">Blood Getting Requests:-</p>
+                <table>
+                    <tr>
+                      <th>Patient Name</th>
+                      <th>Contact No.</th>
+                      <th>Blood Group</th>
+                      <th>Action</th>
+                    </tr>
+                    <% checkd.forEach(function(element) { %>
+                        <tr style="text-align: center">
+                      <td> <%= element.name %></td>
+                      <td> <%= element.phone %></td>
+                      <td> <%= element.bg %></td>
+                      <td> 
+                        <form method="POST">
+                        <button class="btn">  <a href="<%= `/statuss?idd=`+element._id %>">  Accept</a></button>
+                        <button class="btn">  <a href="<%= `/statuss?iddd=`+element._id %>">  Decline</a></button>
+                    </form>
+                </td>
+                      <% }); %>
+                    
+                  </table>
+            
+            </div>
+           
+        </div>
+    </section>
+    <footer class="background">
+        <p class="text-footer">
+        Copyright &copy; 207 - All Rights Reserved
+    </p>
+    </footer>
+    <script src="resp/resp.js"></script>
+</body>
+</html> 

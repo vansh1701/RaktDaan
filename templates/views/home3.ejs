@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>रक्तDaan</title>
+</head>
+<body>
+    <nav class="navbar background h-nav"><div class="list"></div>
+        <ul class="nav-bar v-class">
+            
+            <li><div class="logo"><img src="images/logo.jpg" alt="logo"></div></li>
+            <li><a href="home2">Home</a></li>
+            <li><a href="about2">About Us</a></li>
+            <li><a href="contact2">Contact Us</a></li>
+            <li><a href="logout">Logout</a></li>
+            <div class="profile"><li><a href="profile"><%= userData.dname%></a></li></div>
+        </div>
+        </ul>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+    <section class="background firstsection">
+        <div class="box-main">
+            <div class="fhalf">
+                <p class="text-big">History</p>
+               <br><br><br><br><br>
+                <p class="text-small">Your Donation History</p>
+
+                <table class="tb">
+                    <tr>
+                      <th>Date</th>
+                      <th>Hospital</th>
+                      <th>Phone No.</th>
+                      <th>Status</th>
+                    </tr>
+                    
+                    <tr style="text-align: center">
+                            <% histor.forEach(function(element) { %>
+                            <tr style="text-align: center">
+                          <td> <%= element.date %></td>
+                          <td> <%= element.hospital %></td>
+                          <td> <%= element.phone %></td>
+                          <td> <%= element.status %></td>
+                        </tr>
+                        <% }); %>
+                    
+                  </table>
+                  <br><br><br>
+                  <p class="text-small">Your Blood Recieving History</p>
+
+                  <table class="tb">
+                      <tr>
+                        <th>Date</th>
+                        <th>Hospital</th>
+                        <th>Phone No.</th>
+                        <th>Status</th>
+                      </tr>
+                        <% rhisto.forEach(function(element) { %>
+                            <tr style="text-align: center">
+                          <td> <%= element.date %></td>
+                          <td> <%= element.hospital %></td>
+                          <td> <%= element.phone %></td>
+                          <td> <%= element.status %></td>
+                        </tr>
+                        <% }); %>
+                    </table>
+            </div>
+           
+        </div>
+    </section>
+    
+    <footer class="background">
+        <p class="text-footer">
+        Copyright &copy; 207 - All Rights Reserved
+    </p>
+    </footer>
+    <script src="resp/resp.js"></script>
+</body>
+</html> 

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>रक्तDaan</title>
+</head>
+<body>
+    <nav class="navbar background h-nav"><div class="list"></div>
+        <ul class="nav-bar v-class">
+            
+            <li><div class="logo"><img src="images/logo.jpg" alt="logo"></div></li>
+            <li><a href="home2">Home</a></li>
+            <li><a href="about2">About Us</a></li>
+            <li><a href="contact2">Contact Us</a></li>
+            <li><a href="logout">Logout</a></li>
+        </div>
+        </ul>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+    <section class="background firstsection">
+        <div class="box-main">
+            <div class="fhalf">
+                <p class="text-big">All The Available Hospitals Near You Are:-</p>
+                <table>
+                    <tr>
+                      <th>Hospital</th>
+                      <th>Contact No.</th>
+                      <th>A+</th>
+                      <th>A-</th>
+                      <th>B+</th>
+                      <th>B-</th>
+                      <th>O+</th>
+                      <th>O-</th>
+                      <th>AB+</th>
+                      <th>AB-</th>
+                      <th>Click to get blood</th>
+                    </tr>
+                    <% check.forEach(function(element) { %> 
+                        <tr style="text-align: center;">   
+                          <td> <%= element.hname %></td>
+                          <td> <%= element.hphone %></td>                    
+                          <td> <%= element.Ap %></td>
+                          <td> <%= element.An %></td>
+                          <td> <%= element.Bp %></td>                    
+                          <td> <%= element.Bn %></td>
+                          <td> <%= element.Op %></td>
+                          <td> <%= element.On %></td>                    
+                          <td> <%= element.ABp %></td>
+                          <td> <%= element.ABn %></td>
+                          <td><button class="btn">  <a href="<%= `/home2?idd=`+element._id %>">  GET</a></button></td>
+                         
+                        <% }); %></tr>
+                  </table>
+            
+            </div>
+           
+        </div>
+    </section>
+    <footer class="background">
+        <p class="text-footer">
+        Copyright &copy; 207 - All Rights Reserved
+    </p>
+    </footer>
+    <script src="resp/resp.js"></script>
+</body>
+</html> 

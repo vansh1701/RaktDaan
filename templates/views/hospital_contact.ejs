@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>रक्तDaan</title>
+</head>
+<body>
+    <nav class="navbar background h-nav"><div class="list"></div>
+        <ul class="nav-bar v-class">
+            
+            <li><div class="logo"><img src="images/logo.jpg" alt="logo"></div></li>
+            <li><a href="hospital_home">Home</a></li>
+            <li><a href="hospital_about">About Us</a></li>
+            <li><a href="hospital_contact">Contact Us</a></li>
+            <li><a href="Record">Records</a></li>
+            <li><a href="requests">Requests</a></li>
+            <li><a href="hospital_history">History</a></li>
+            <li><a href="logout">Logout</a></li>
+            <div class="profile"><li><a href="profileh"><%= userData.hname%></a></li></div>
+        </ul>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+    <section class="contact">
+        <h1 class="text-center">Contact Us</h1>
+        <div class="form"><form action="/hospital_contact" method="POST">
+            <input class="form-input" type="text" name="name" id="name" placeholder="Enter your name">
+            <input class="form-input" type="email" name="email" id="email" placeholder="Enter your E-mail">
+            <input class="form-input" type="phone" name="phone" id="phone" placeholder="Enter your Phone Number">
+            <textarea class="form-input" name="problem" id="problem" cols="59" class="form-input" rows="10" placeholder="Elaborate your problem"></textarea>
+            <input class="form-input" type="text" name="State" id="state" placeholder="Enter your State">
+            <button class="btn " inputmode="Submit" value="hospital_contact">Submit</button>
+        </form>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br><br><br><br><br>
+            </div> 
+    </section>
+   
+    <footer class="background">
+        <p class="text-footer">
+        Copyright &copy; 207 - All Rights Reserved
+    </p>
+    </footer>
+    <script src="resp/resp.js"></script>
+</body>
+</html> 
