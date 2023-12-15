@@ -311,7 +311,7 @@ app.get("/login",(_,resp)=>{
     resp.render('login');
 });
 app.get("/signuph",(_,resp)=>{
-    resp.render('signuph');
+    resp.render('Signuph');
 });
 // app.get("/signup", (_,resp) =>{
 //     resp.render("Signup");
@@ -407,7 +407,7 @@ app.get("/contact2", auth ,(req,res)=>{
 });
 
 app.get("/signupd", (_,resp)=>{
-    resp.render("signupd");
+    resp.render("Signupd");
 });
 
 app.get("/donate1", auth ,async (req,res)=>{
