@@ -313,9 +313,9 @@ app.get("/login",(_,resp)=>{
 app.get("/signuph",(_,resp)=>{
     resp.render('signuph');
 });
-app.get("/signup", (_,resp) =>{
-    resp.render("Signup");
-});
+// app.get("/signup", (_,resp) =>{
+//     resp.render("Signup");
+// });
 app.get("/hospital_home", authh , (req,res)=>{
     res.render("hospital_home",{
         userData:res.user
