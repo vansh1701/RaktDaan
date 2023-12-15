@@ -417,8 +417,8 @@ app.get("/donate1", auth ,async (req,res)=>{
 // // Connect to MongoDB
 require("./db/conn");
 
-const Signupd = require("./models/signupd");
-const Signuph = require("./models/signuph");
+const signupd = require("./models/signupd");
+const signuph = require("./models/signuph");
 const contact_us = require("./models/contact");
 const requestt = require("./models/request"); 
 const { request } = require('http');
@@ -435,7 +435,7 @@ app.post("/signupd", async(req,res) =>{
         
         if(password === confirm_password){
             console.log("ff");
-            const registerDonor = new Signupd({
+            const registerDonor = new signupd({
                 dname: req.body.dname,
                 demail : req.body.demail,
                 dphone : req.body.dphone,
@@ -468,7 +468,7 @@ app.post("/signuph" , async(req,res) =>{
 
         if(password === confirm_password){
             console.log('ff')
-            const registerHospital = new Signuph({
+            const registerHospital = new signuph({
                 hname : req.body.hname,
                 aname : req.body.aname,
                 hemail : req.body.hemail,
