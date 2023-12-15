@@ -26,8 +26,8 @@
         <h1 class="text-center">Donor's Registeration Form</h1>
         <div class="form"><form action="/Signupd" method="POST">
             <input class="form-input" type="text" name="dname" id="name" placeholder="Enter your name">
-            <input class="form-input" type="email" name="demail" id="email" placeholder="Enter your E-mail">
-            <input class="form-input" type="phone" name="dphone" id="phone" placeholder="Enter your Phone Number">
+            <input class="form-input" type="email" name="demail" id="email" placeholder="Enter your E-mail" required>
+            <input class="form-input" type="phone" name="dphone" id="phone" placeholder="Enter your Phone Number" required>
             
             <label for="bloodgroup">Choose your Blood Group:</label>
             <select name="bloodgroup" id="bloodgroup">
@@ -87,8 +87,8 @@
             
             <input type="text" name="pincode" id="pincode" placeholder="Enter your Pincode" class="form-input">
             <input type="text" name="allergy" id="allergy" placeholder="Enter Allergy (if any)" class="form-input">
-            <input type="password" name="password" id="password" placeholder="Enter your Passoword" class="form-input">
-            <input type="password" name="confirm_password" id="password" placeholder="Confirm your Password" class="form-input">
+            <input type="password" name="password" id="password" placeholder="Enter your Passoword" class="form-input" required>
+            <input type="password" name="confirm_password" id="password" placeholder="Confirm your Password" class="form-input" required>
             </div>
             <div class="form">
                 <br><br>
